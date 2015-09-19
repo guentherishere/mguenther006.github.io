@@ -56,6 +56,9 @@ yellow:hover {
   color: #E5E500;
 }
 @media only screen and (max-width: 574px) {
+  html {
+    background: url('./texas.jpg') no-repeat center center fixed;
+  }
   headline {
     font-size: 200%;
     font-weight: 600;
