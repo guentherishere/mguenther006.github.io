@@ -14,8 +14,8 @@ container {
   position: absolute;
   height: 100%;
   width: 100%;
-  filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='./texas.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./texas.jpg', sizingMethod='scale')";
+  filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='./texas.jpg', sizingMethod='crop');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./texas.jpg', sizingMethod='crop')";
 }
 headline {
   font-size: 400%;
