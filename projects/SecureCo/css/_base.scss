@@ -1,0 +1,43 @@
+/******************************/
+/*       Common Colors       */
+/****************************/
+$thunder: #231F20;
+$mine-shaft: #3f3e3e;
+$gray: #8c8c8c;
+$mercury: #e2e2e2;
+$wildsand: #f5f5f5;
+$white: #ffffff;
+$bourbon: #bb6a1e;
+$jaffa: #f4792f;
+$carrot-orange: #ee882a;
+$matisse: #1e688f;
+$eastern-blue: #2484b5;
+$curious-blue: #2296d1;
+$pictonblue: #44AADD;
+$polar: #ecf6fb;
+/*colors from charts */
+$low: #73CE9B;
+$medium: #79C1E5;
+$high: #FFFF00;
+$critical: #FBBF61;
+
+/******************************/
+/*       Common Fonts       */
+/****************************/
+$PriFont1: 'Raleway', sans-serif;
+
+/******************************/
+/*  Global Layout Settings   */
+/****************************/
+body {
+    font-family: $PriFont1;
+    background: $white;
+    color: $white;
+}
+.container {
+    width: 98%;
+}
+main {
+  margin-top: 1%;
+  color: $thunder;
+}

@@ -1,0 +1,55 @@
+/******************************/
+/*       Navbar Styling      */
+/****************************/
+nav {
+    background: $thunder;
+    height: 80px;
+    padding-top: 17px;
+    padding-left: 42px;
+    .fa-shield {
+        color: $jaffa;
+        vertical-align: middle;
+    }
+    .brand-text {
+        font-size: 24px;
+        padding-left: 20px;
+        vertical-align: middle;
+    }
+    .navbar-nav {
+        li {
+            padding-right: 20px;
+            > a {
+                background: $mine-shaft;
+                color: $mercury;
+                padding-top: 13px;
+                padding-left: 35px;
+                padding-right: 35px;
+                font-size: 14px;
+                letter-spacing: 3px;
+                border-radius: 6px;
+                text-transform: uppercase;
+                height: 45px;
+                &:hover {
+                    background: $gray;
+                }
+            }
+            &:nth-child(4) {
+                a {
+                    background: $carrot-orange;
+                    font-weight: 800;
+                    text-shadow: 0 2px $bourbon;
+                }
+                .fa-caret-down {
+                    color: $mercury;
+                }
+                :hover {
+                    background: $bourbon;
+                }
+            }
+            .fa-caret-down {
+                color: $gray;
+                font-size: 16px;
+            }
+        }
+    }
+}

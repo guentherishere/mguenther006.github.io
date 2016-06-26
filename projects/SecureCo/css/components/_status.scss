@@ -1,0 +1,56 @@
+.status {
+    margin-top: 30px;
+    .status-header {
+        background: $mercury;
+        height: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        a {
+            color: $pictonblue;
+            font-size: 12px;
+            padding-top: 11px;
+        }
+    }
+    /* need to work with bootstrap include so !important isn't necessary*/
+    table {
+        margin-top: 20px;
+        tr {
+          background: $white !important;
+        }
+        td {
+            padding: 6px !important;
+            text-align: center;
+            border-top: 0 !important;
+            border-bottom: 1px solid $wildsand;
+            font-size: 12px;
+            font-weight: 500;
+            &:first-child {
+                text-align: left;
+            }
+        }
+        .table-header {
+            background: $polar !important;
+            font-weight: 500;
+        }
+    }
+    .status-mid, .status-right {
+      table {
+        td:last-child {
+          text-align: right;
+        }
+      }
+    }
+    /*classes for status icons*/
+    .low {
+        color: $low;
+    }
+    .medium {
+        color: $medium;
+    }
+    .high {
+        color: $high;
+    }
+    .critical {
+        color: $critical;
+    }
+}

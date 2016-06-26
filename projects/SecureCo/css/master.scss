@@ -1,0 +1,16 @@
+/*******************/
+/*  Dependencies  */
+/*****************/
+/* Bootstrap Variables */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+@import "variables";
+/* Bootstrap components */
+@import "bootstrap";
+/* base styling */
+@import "base";
+/* navbar styling */
+@import "components/navbar";
+/* header styling */
+@import "components/header";
+/* status styling */
+@import "components/status";

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SecureCo - Dashboard</title>
+        <!-- BOWER COMPONENTS/DEPENDENCIES -->
+        <!-- Icons -->
+        <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
+        <!-- Font Import - Better to use Link since @Import prevents parallel downloads -->
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+        <!-- CSS -->
+        <!-- Master CSS -->
+        <link rel="stylesheet" href="/css/master.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+        <nav>
+            <div class="col-xs-12">
+                <span class="fa fa-shield fa-3x" aria-hidden="true"></span>
+                <span class="brand-text">SecureCo</span>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Devices
+                            <span class="fa fa-caret-down" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assessments
+                            <span class="fa fa-caret-down" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administration
+                            <span class="fa fa-caret-down" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="fa fa-caret-down" aria-hidden="true"></span>
+                            Toolbox</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <div class="col-xs-12 row">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label>Enterprise Domain Name</label>
+                        <input type="text" class="form-control" id="search" placeholder="Search in Domain">
+                    </div>
+                    <button type="submit" class="btn btn-default search-button">
+                        <span class="fa fa-search" aria-hidden="true"></span>
+                    </button>
+                    <ul class="list-inline pull-right">
+                        <li>
+                            <span class="fa fa-tachometer" aria-hidden="true"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-list-ul" aria-hidden="true"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-sitemap" aria-hidden="true"></span>
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="row graphs">
+                <div class="col-md-6 graph-left">
+                    <!-- Graph shown here via SVG rendered from highcharts -->
+                </div>
+                <div class="col-md-6 graph-right">
+                    <!-- Graph shown here via SVG rendered from highcharts -->
+                </div>
+            </div>
+            <div class="row status">
+                <div class="col-md-4 status-left">
+                    <div class="status-header">
+                        <h4 class="pull-left">Devices Needing Attention</h4>
+                        <a href="#" class="pull-right">View All
+                            <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <tr class="table table-header">
+                                <td>
+                                    Device
+                                </td>
+                                <td>
+                                    Change
+                                </td>
+                                <td>
+                                    Retrieval
+                                </td>
+                                <td>
+                                    Log
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    FW01CC01
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ESD-CORE-6513-A
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    MSF-FDR-CMA
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    pdcdevfw
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle low" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    vhdc-fw-01
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle low" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PHSA-ENG
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle low" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    SYMMSS-FW-1027741
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    LEGACY-IT-FW
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle high" aria-hidden="true"></i>
+                                </td>
+                                <td>
+                                    <i class="fa fa-circle critical" aria-hidden="true"></i>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 status-mid">
+                    <div class="status-header">
+                        <h4 class="pull-left">Recently Changed Devices</h4>
+                        <a href="#" class="pull-right">View All
+                            <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <tr class="table table-header">
+                                <td>
+                                    Device
+                                </td>
+                                <td>
+                                    Date of Change
+                                </td>
+                                <td>
+                                    Type of Changes
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    FW01CC01
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    ADD, MODIFY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ESD-CORE-6513-A
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    ADD, MODIFY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    MSF-FDR-CMA
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    MODIFY, DELETE
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    pdcdevfw
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    MODIFY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    vhdc-fw-01
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    DELETE
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PHSA-ENG
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    DELETE
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    SYMMSS-FW-1027741
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    ADD, MODIFY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    LEGACY-IT-FW
+                                </td>
+                                <td>
+                                    08/28/2013
+                                </td>
+                                <td>
+                                    ADD
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4 status-right">
+                    <div class="status-header">
+                        <h4 class="pull-left">Devices By Rule Count</h4>
+                        <a href="#" class="pull-right">View All
+                            <span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <tr class="table table-header">
+                                <td>
+                                    Device
+                                </td>
+                                <td>
+                                    Rule Count
+                                </td>
+                                <td>
+                                    Removable Rule Count
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    FW01CC01
+                                </td>
+                                <td>
+                                    6784
+                                </td>
+                                <td>
+                                    218
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ESD-CORE-6513-A
+                                </td>
+                                <td>
+                                    2512
+                                </td>
+                                <td>
+                                    115
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    MSF-FDR-CMA
+                                </td>
+                                <td>
+                                    2407
+                                </td>
+                                <td>
+                                    80
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    pdcdevfw
+                                </td>
+                                <td>
+                                    2057
+                                </td>
+                                <td>
+                                    15
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    vhdc-fw-01
+                                </td>
+                                <td>
+                                    1617
+                                </td>
+                                <td>
+                                    5
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    PHSA-ENG
+                                </td>
+                                <td>
+                                    977
+                                </td>
+                                <td>
+                                    18
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    SYMMSS-FW-1027741
+                                </td>
+                                <td>
+                                    848
+                                </td>
+                                <td>
+                                    352
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    LEGACY-IT-FW
+                                </td>
+                                <td>
+                                    655
+                                </td>
+                                <td>
+                                    253
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- JavaScript Dependencies -->
+        <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+        <script src="/bower_components/highcharts/highcharts.js" charset="utf-8"></script>
+        <script src="/js/themes/SecureCo-graph-theme.js" charset="utf-8"></script>
+        <script src="/js/graph-left.js"></script>
+        <script src="/js/graph-right.js"></script>
+    </body>
+</html>
