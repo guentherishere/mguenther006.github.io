@@ -1,31 +1,44 @@
 .default_color {
-    background-color: #65AFFF !important
+    background-color: #65AFFF !important;
 }
+
 .default_color_text {
-    color: #65AFFF !important
+    color: #65AFFF !important;
 }
+
 .icon-block {
-    padding: 0 15px
+    padding: 0 15px;
 }
+
 #intro, #work, #team {
-    padding-top: 4rem
+    padding-top: 4rem;
 }
+
 #index-banner {
     min-height: 632px;
     max-height: 864px;
     position: relative;
-    background-color: #65AFFF
+    background-color: #65AFFF;
 }
+
 #nav_f {
     box-shadow: none !important;
-    -webkit-box-shadow: none !important
+    -webkit-box-shadow: none !important;
 }
+
+.parallax-container h1 {
+    position: relative;
+    top: 35%;
+    transform: translateY(-35%);
+}
+
 .text_h {
-    padding: 8% 0;
+    /*padding: 8% 0;*/
     font-size: 6.0em;
     font-weight: 100;
-    color: white
+    color: white;
 }
+
 .brand-logo {
     position: absolute;
     color: #fff;
@@ -34,53 +47,65 @@
     font-style: normal;
     font-weight: 100;
     padding: 0;
-    letter-spacing: 7px
+    letter-spacing: 7px;
 }
+
 .text_h2 {
     font-weight: 100;
     margin-bottom: 4%;
-    line-height: 4.5rem
+    line-height: 4.5rem;
 }
+
 .span_h2 {
     font-weight: 300;
     color: #65AFFF
 }
+
 .text_b {
     color: #65AFFF
 }
+
 .in {
     font-weight: 400 !important;
-    font-style: normal !important
+    font-style: normal !important;
 }
+
 .promo i {
     color: #65AFFF;
     font-size: 7rem;
-    display: block
+    display: block;
 }
+
 .card-content a {
-    color: #65AFFF
+    color: #65AFFF;
 }
+
 .card-content a:hover {
-    color: #65AFFF
+    color: #65AFFF;
 }
+
 #work, #team {
-    background: rgb(247, 247, 247)
+    background: rgb(247, 247, 247);
 }
+
 .text_pink {
-    color: #EF9A9A
+    color: #EF9A9A;
 }
+
 nav ul a {
     font-size: 1.2rem;
     color: #FFF;
     letter-spacing: 2px;
     display: block;
     font-weight: 300;
-    padding: 0px 15px
+    padding: 0px 15px;
 }
+
 .cd-headline.type .cd-words-wrapper {
     vertical-align: top;
-    overflow: hidden
+    overflow: hidden;
 }
+
 .cd-headline.type .cd-words-wrapper::after {
     content: '';
     position: absolute;
@@ -94,64 +119,75 @@ nav ul a {
     transform: translateY(-50%);
     height: 90%;
     width: 1px;
-    background-color: #aebcb9
+    background-color: #aebcb9;
 }
+
 .cd-headline.type .cd-words-wrapper.waiting::after {
     -webkit-animation: cd-pulse 1s infinite;
     -moz-animation: cd-pulse 1s infinite;
-    animation: cd-pulse 1s infinite
+    animation: cd-pulse 1s infinite;
 }
+
 .cd-headline.type .cd-words-wrapper.selected {
-    background-color: #FFF
+    background-color: #FFF;
 }
+
 .cd-headline.type .cd-words-wrapper.selected::after {
-    visibility: hidden
+    visibility: hidden;
 }
+
 .cd-headline.type .cd-words-wrapper.selected b {
-    color: #65AFFF
+    color: #65AFFF;
 }
+
 .cd-headline.type b {
-    visibility: hidden
+    visibility: hidden;
 }
+
 .cd-headline.type b.is-visible {
-    visibility: visible
+    visibility: visible;
 }
+
 .cd-headline.type i {
     position: absolute;
-    visibility: hidden
+    visibility: hidden;
 }
+
 .cd-headline.type i.in {
     position: relative;
-    visibility: visible
+    visibility: visible;
 }
+
 @-webkit-keyframes cd-pulse {
     0% {
         -webkit-transform: translateY(-50%) scale(1);
-        opacity: 1
+        opacity: 1;
     }
     40% {
         -webkit-transform: translateY(-50%) scale(0.9);
-        opacity: 0
+        opacity: 0;
     }
     100% {
         -webkit-transform: translateY(-50%) scale(0);
-        opacity: 0
+        opacity: 0;
     }
 }
+
 @-moz-keyframes cd-pulse {
     0% {
         -moz-transform: translateY(-50%) scale(1);
-        opacity: 1
+        opacity: 1;
     }
     40% {
         -moz-transform: translateY(-50%) scale(0.9);
-        opacity: 0
+        opacity: 0;
     }
     100% {
         -moz-transform: translateY(-50%) scale(0);
-        opacity: 0
+        opacity: 0;
     }
 }
+
 @keyframes cd-pulse {
     0% {
         -webkit-transform: translateY(-50%) scale(1);
@@ -159,7 +195,7 @@ nav ul a {
         -ms-transform: translateY(-50%) scale(1);
         -o-transform: translateY(-50%) scale(1);
         transform: translateY(-50%) scale(1);
-        opacity: 1
+        opacity: 1;
     }
     40% {
         -webkit-transform: translateY(-50%) scale(0.9);
@@ -167,7 +203,7 @@ nav ul a {
         -ms-transform: translateY(-50%) scale(0.9);
         -o-transform: translateY(-50%) scale(0.9);
         transform: translateY(-50%) scale(0.9);
-        opacity: 0
+        opacity: 0;
     }
     100% {
         -webkit-transform: translateY(-50%) scale(0);
@@ -175,9 +211,10 @@ nav ul a {
         -ms-transform: translateY(-50%) scale(0);
         -o-transform: translateY(-50%) scale(0);
         transform: translateY(-50%) scale(0);
-        opacity: 0
+        opacity: 0;
     }
 }
+
 #preloader {
     position: fixed;
     top: 0;
@@ -185,8 +222,9 @@ nav ul a {
     right: 0;
     bottom: 0;
     background-color: #fff;
-    z-index: 1200
+    z-index: 1200;
 }
+
 #status {
     width: 200px;
     height: 200px;
@@ -196,50 +234,63 @@ nav ul a {
     background-image: url(/img/status.gif);
     background-repeat: no-repeat;
     background-position: center;
-    margin: -100px 0 0 -100px
+    margin: -100px 0 0 -100px;
 }
+
 @media only screen and (max-width: 480px) {
     .text_h {
-        margin-top: 22%;
-        padding: 4% 0;
+        /*margin-top: 22%;*/
+        /*padding: 4% 0;*/
         font-size: 5em;
         font-weight: 100;
-        color: white
+        color: white;
     }
 }
+
 input, textarea {
-    border-bottom: 1px solid #fff
+    border-bottom: 1px solid #fff;
 }
+
 nav a.button-collapse {
-    left: -25px
+    left: -25px;
 }
+
 .card-avatar .waves-effect {
     text-align: center;
-    margin-top: 20px
+    margin-top: 20px;
 }
+
 .card-avatar img {
     height: 150px;
     width: 150px;
-    border-radius: 75px
+    border-radius: 75px;
 }
+
 .card-avatar .card-content {
-    text-align: center
+    text-align: center;
 }
+
 .card .card-content p {
-    margin: 15px 0px
+    margin: 15px 0px;
 }
+
 .card-avatar .card-content i {
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
+
 .card-avatar .card-content .card-title {
-    line-height: 30px !important
+    line-height: 30px !important;
 }
+
 .parallax-container {
-    max-height: 400px
+    position: relative;
+    max-height: 400px;
 }
+
 footer.page-footer {
-    margin-top: 0px !important
+    margin-top: 0px !important;
 }
+
 .topText {
-    bottom: 2% !important !important;
+    bottom: 2% !important;
 }
